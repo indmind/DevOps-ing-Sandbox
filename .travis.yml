@@ -14,7 +14,8 @@ cache:
     - "$HOME/.local/bin"
 
 before_install:
-  - sudo apt install figlet
+  - sudo apt update
+  - sudo apt install figlet -y
   - nvm install
 
 install:
