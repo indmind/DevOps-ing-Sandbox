@@ -13,7 +13,11 @@ cache:
     - "$HOME/.local/bin"
 
 before_install:
+  - sudo apt install figlet
   - nvm install
 
 install:
   - npm ci
+
+script:
+  - ./awesome.sh
