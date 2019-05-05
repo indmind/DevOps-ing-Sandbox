@@ -19,6 +19,7 @@ before_install:
   - nvm install
 
 install:
+  - npm i -g codecov
   - npm ci
 
 script:
