@@ -22,4 +22,10 @@ install:
   - npm ci
 
 script:
+  - npm test
+
+after_success:
   - ./awesome.sh
+
+after_failure:
+  - ./loser.sh
